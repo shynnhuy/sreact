@@ -1,0 +1,32 @@
+{
+  "name": "@shynnhuy/sreact",
+  "version": "1.0.0",
+  "description": "'react webpack/parcel' by Shynn",
+  "main": "index.js",
+  "bin": {
+    "@shynnhuy/sreact": "./index.js",
+    "sreact": "./index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "MERN",
+    "CLI"
+  ],
+  "author": "NnyhS",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.1",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "listr": "^0.14.3",
+    "minimist": "^1.2.5",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0",
+    "util": "^0.12.3"
+  }
+}
