@@ -19,6 +19,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Shynn React Webpack",
       template: path.resolve(__dirname, "./public/index.html"),
+      favicon: path.resolve(__dirname, "./public/favicon.ico"),
       filename: "index.html",
       minify: {
         removeComments: true,
