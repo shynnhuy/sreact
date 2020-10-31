@@ -81,7 +81,7 @@ const generateTemplate = async (templateDirectory, name, router, redux) => {
       ? {
           title: "Initializing redux library",
           task: async () => {
-            const redux = path.resolve(targetDirectory, name, "src");
+            const redux = path.resolve(targetDirectory, name, "src/redux");
             await install(
               {
                 redux: undefined,
