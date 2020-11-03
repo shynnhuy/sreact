@@ -1,10 +1,8 @@
 import React from "react";
+import useCounter from "@hooks/useCounter";
 
 const App = () => {
-  const [counter, setCounter] = React.useState(0);
-
-  const add = () => setCounter(counter + 1);
-  const sub = () => setCounter(counter - 1);
+  const {counter, add, sub} = useCounter()
 
   return (
     <div>

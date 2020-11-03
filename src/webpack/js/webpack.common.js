@@ -31,19 +31,6 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        enforce: 'pre',
-        use: [
-          {
-            options: {
-              eslintPath: require.resolve('eslint'),
-            },
-            loader: require.resolve('eslint-loader'),
-          },
-        ],
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.(js|jsx)$/,
         loader: "babel-loader",
         exclude: [/node_modules/],
       },
@@ -71,13 +58,13 @@ module.exports = {
   resolve: {
     extensions: [".jsx", ".js"],
     alias: {
-      assets: path.resolve(__dirname, "src/assets"),
-      components: path.resolve(__dirname, "src/components"),
-      pages: path.resolve(__dirname, "src/pages"),
-      layouts: path.resolve(__dirname, "src/layouts"),
-      redux: path.resolve(__dirname, "src/redux"),
-      context: path.resolve(__dirname, "src/context"),
-      hooks: path.resolve(__dirname, "src/hooks"),
+      "@assets": path.resolve(__dirname, "src/assets"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@pages": path.resolve(__dirname, "src/pages"),
+      "@layouts": path.resolve(__dirname, "src/layouts"),
+      "@redux": path.resolve(__dirname, "src/redux"),
+      "@context": path.resolve(__dirname, "src/context"),
+      "@hooks": path.resolve(__dirname, "src/hooks"),
     },
   },
 };
